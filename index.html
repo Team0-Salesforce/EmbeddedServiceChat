@@ -36,6 +36,13 @@
 
         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
         embedded_svc.settings.entryFeature = 'LiveAgent';
+        
+        embedded_svc.settings.extraPrechatFormDetails = [ {
+            "Account": "Skill Selected",
+            "value": "0010900001th9qYAAQ",
+            "transcriptFields":[ "AccountId" ],
+            "displayToAgent": true
+        } ];
 
         embedded_svc.init(
           'https://team0demoorg-dev-ed.develop.my.salesforce.com',
