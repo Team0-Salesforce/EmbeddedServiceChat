@@ -42,19 +42,19 @@
 			embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 			embedded_svc.settings.entryFeature = 'LiveAgent';
 			
-			embedded_svc.settings.smallCompanyLogoImgURL = 'https://caleffi--chat.sandbox.my.site.com/DigitalEngagement/resource/Caleffi_DigitalEngagement/CaleffiWhite.png';
+			embedded_svc.settings.smallCompanyLogoImgURL = 'https://caleffi.my.site.com/DigitalEngagement/resource/Caleffi_DigitalEngagement/CaleffiWhite.png';
 
 			embedded_svc.init(
-				'https://caleffi--chat.sandbox.my.salesforce.com',
-				'https://caleffi--chat.sandbox.my.site.com/service',
+				'https://caleffi.my.salesforce.com',
+				'https://caleffi.my.site.com/DigitalEngagement',
 				gslbBaseURL,
-				'00D1x0000001njr',
+				'00D24000000Yqug',
 				'Caleffi',
 				{
-					baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
-					deploymentId: '5721x00000008Eb',
-					buttonId: '5731x00000001SO',
-					baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
+					baseLiveAgentContentURL: 'https://c.la3-c2-fra.salesforceliveagent.com/content',
+					deploymentId: '57208000000bp2L',
+					buttonId: '57308000000Xcw3',
+					baseLiveAgentURL: 'https://d.la3-c2-fra.salesforceliveagent.com/chat',
 					eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1x0000008PjCEAU_1886cfa19bb',
 					isOfflineSupportEnabled: false
 				}
@@ -63,7 +63,7 @@
 
 		if (!window.embedded_svc) {
 			var s = document.createElement('script');
-			s.setAttribute('src', 'https://caleffi--chat.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+			s.setAttribute('src', 'https://caleffi.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 			s.onload = function() {
 				initESW(null);
 			};
