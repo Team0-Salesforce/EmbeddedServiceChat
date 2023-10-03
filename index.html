@@ -72,8 +72,11 @@
 			initESW('https://service.force.com');
 		}
 	</script>
-	<script>
-		embedded_svc.bootstrapEmbeddedService() // Open directly the chat button
+	<script type='text/javascript'>
+		function bootstrapChat() {
+			embedded_svc.bootstrapEmbeddedService();
+		}
+		setTimeout(bootstrapChat, 2000)
 	</script>
   </body>
 </html>
