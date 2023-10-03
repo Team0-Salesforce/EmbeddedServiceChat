@@ -59,7 +59,6 @@
 					isOfflineSupportEnabled: false
 				}
 			);
-			embedded_svc.bootstrapEmbeddedService() // Open directly the chat button
 		};
 
 		if (!window.embedded_svc) {
@@ -72,6 +71,9 @@
 		} else {
 			initESW('https://service.force.com');
 		}
+	</script>
+	<script>
+		embedded_svc.bootstrapEmbeddedService() // Open directly the chat button
 	</script>
   </body>
 </html>
